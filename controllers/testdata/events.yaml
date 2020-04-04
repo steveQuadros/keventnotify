@@ -1,0 +1,118 @@
+- apiVersion: v1
+  count: 1
+  eventTime: null
+  firstTimestamp: "2020-04-04T15:51:59Z"
+  involvedObject:
+    apiVersion: v1
+    fieldPath: spec.containers{local-path-provisioner}
+    kind: Pod
+    name: local-path-provisioner-7745554f7f-2wgwz
+    namespace: local-path-storage
+    resourceVersion: "467"
+    uid: bd4de662-364f-48d7-8131-03a378aafc27
+  kind: Event
+  lastTimestamp: "2020-04-04T15:51:59Z"
+  message: Started container local-path-provisioner
+  metadata:
+    creationTimestamp: "2020-04-04T15:51:59Z"
+    name: local-path-provisioner-7745554f7f-2wgwz.1602a8b63f50ce00
+    namespace: local-path-storage
+    resourceVersion: "481"
+    selfLink: /api/v1/namespaces/local-path-storage/events/local-path-provisioner-7745554f7f-2wgwz.1602a8b63f50ce00
+    uid: 29601e66-da48-4624-a929-a247250ff4b9
+  reason: Started
+  reportingComponent: ""
+  reportingInstance: ""
+  source:
+    component: kubelet
+    host: kind-control-plane
+  type: Normal
+---
+- apiVersion: v1
+  count: 1
+  eventTime: null
+  firstTimestamp: "2020-04-04T15:51:44Z"
+  involvedObject:
+    apiVersion: apps/v1
+    kind: ReplicaSet
+    name: local-path-provisioner-7745554f7f
+    namespace: local-path-storage
+    resourceVersion: "364"
+    uid: be3b90ab-ac43-406e-baf9-b596c95f4e00
+  kind: Event
+  lastTimestamp: "2020-04-04T15:51:44Z"
+  message: 'Created pod: local-path-provisioner-7745554f7f-2wgwz'
+  metadata:
+    creationTimestamp: "2020-04-04T15:51:44Z"
+    name: local-path-provisioner-7745554f7f.1602a8b2be7dc8aa
+    namespace: local-path-storage
+    resourceVersion: "398"
+    selfLink: /api/v1/namespaces/local-path-storage/events/local-path-provisioner-7745554f7f.1602a8b2be7dc8aa
+    uid: 4fa077bd-105c-4586-8190-8a8f7a4a6ccd
+  reason: SuccessfulCreate
+  reportingComponent: ""
+  reportingInstance: ""
+  source:
+    component: replicaset-controller
+  type: Normal
+---
+- apiVersion: v1
+  count: 1
+  eventTime: null
+  firstTimestamp: "2020-04-04T15:51:44Z"
+  involvedObject:
+    apiVersion: apps/v1
+    kind: Deployment
+    name: local-path-provisioner
+    namespace: local-path-storage
+    resourceVersion: "242"
+    uid: caa1033d-c30c-49c5-890e-191dd89f5f14
+  kind: Event
+  lastTimestamp: "2020-04-04T15:51:44Z"
+  message: Scaled up replica set local-path-provisioner-7745554f7f to 1
+  metadata:
+    creationTimestamp: "2020-04-04T15:51:44Z"
+    name: local-path-provisioner.1602a8b2ba6667ee
+    namespace: local-path-storage
+    resourceVersion: "368"
+    selfLink: /api/v1/namespaces/local-path-storage/events/local-path-provisioner.1602a8b2ba6667ee
+    uid: 8e37f865-8429-4586-8c30-eb45a2b19e7e
+  reason: ScalingReplicaSet
+  reportingComponent: ""
+  reportingInstance: ""
+  source:
+    component: deployment-controller
+  type: Normal
+---
+apiVersion: v1
+  count: 1
+  eventTime: null
+  firstTimestamp: "2020-04-04T15:51:59Z"
+  involvedObject:
+    apiVersion: v1
+    kind: Endpoints
+    name: rancher.io-local-path
+    namespace: local-path-storage
+    resourceVersion: "482"
+    uid: bb659026-e374-4cac-bce0-765596e49db1
+  kind: Event
+  lastTimestamp: "2020-04-04T15:51:59Z"
+  message: local-path-provisioner-7745554f7f-2wgwz_37fef2db-768c-11ea-9230-3a6d1dc904be
+    became leader
+  metadata:
+    creationTimestamp: "2020-04-04T15:51:59Z"
+    name: rancher.io-local-path.1602a8b641c80f9f
+    namespace: local-path-storage
+    resourceVersion: "483"
+    selfLink: /api/v1/namespaces/local-path-storage/events/rancher.io-local-path.1602a8b641c80f9f
+    uid: 0e9a6c44-ef09-432b-a090-2d78c6abaf2d
+  reason: LeaderElection
+  reportingComponent: ""
+  reportingInstance: ""
+  source:
+    component: rancher.io/local-path_local-path-provisioner-7745554f7f-2wgwz_37fef2db-768c-11ea-9230-3a6d1dc904be
+  type: Normal
+kind: List
+metadata:
+  resourceVersion: ""
+  selfLink: ""

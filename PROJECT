@@ -1,0 +1,7 @@
+domain: quad.com
+repo: github.com/stevequadros/keventnotify
+resources:
+- group: events
+  kind: Notification
+  version: v1alpha1
+version: "2"

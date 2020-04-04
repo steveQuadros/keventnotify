@@ -1,0 +1,27 @@
+apiVersion: v1
+count: 1
+eventTime: null
+firstTimestamp: "2020-04-04T15:51:59Z"
+involvedObject:
+  apiVersion: v1
+  kind: Endpoints
+  name: rancher.io-local-path
+  namespace: local-path-storage
+  resourceVersion: "482"
+  uid: bb659026-e374-4cac-bce0-765596e49db1
+kind: Event
+lastTimestamp: "2020-04-04T15:51:59Z"
+message: local-path-provisioner-7745554f7f-2wgwz_37fef2db-768c-11ea-9230-3a6d1dc904be
+  became leader
+metadata:
+  creationTimestamp: "2020-04-04T15:51:59Z"
+  name: rancher.io-local-path.1602a8b641c80f9f
+  namespace: local-path-storage
+  selfLink: /api/v1/namespaces/local-path-storage/events/rancher.io-local-path.1602a8b641c80f9f
+  uid: 0e9a6c44-ef09-432b-a090-2d78c6abaf2d
+reason: LeaderElection
+reportingComponent: ""
+reportingInstance: ""
+source:
+  component: rancher.io/local-path_local-path-provisioner-7745554f7f-2wgwz_37fef2db-768c-11ea-9230-3a6d1dc904be
+type: Normal
